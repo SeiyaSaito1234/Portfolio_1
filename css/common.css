@@ -1,0 +1,283 @@
+/*リセットCSSここから*/
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	color: #333;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	font-family: 'Hiragino Kaku Gothic Pro', 'メイリオ', 'ＭＳ Ｐゴシック', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+select {
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a img {
+	transition: all 0.3s;
+}
+
+a img:hover {
+	opacity: 0.7;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*共通部分ここから */
+.inner {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*ヘッダーCSSここから*/
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 60px;
+	border-bottom: 1px solid #f2f2f2;
+	z-index: 100;
+	background: #fff;
+}
+
+.header img {
+	width: 100%;
+	display: block;
+}
+
+.header-inner {
+	position: relative;
+	margin: 0 auto;
+	height: 60px;
+}
+
+.logo {
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.menu {
+	position: absolute;
+	top: 50%;
+	left: 140px;
+	transform: translateY(-50%);
+	font-size: 13px;
+}
+
+.menu a {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.menu a:last-child {
+	margin-right: 0;
+}
+
+.word-search {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translateY(-50%);
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 8px 10px 8px 40px;
+	font-size: 15px;
+	background: url(../img/icon_search.svg) 10px no-repeat;
+	background-size: 18px;
+	outline: none;
+}
+
+.word-submit {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 50%;
+	z-index: 1;
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+}
+
+.controls {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+.controls-cart {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.controls-cart .cart-batch {
+	position: absolute;
+	top: -9px;
+	right: -15px;
+	background: orange;
+	width: 20px;
+	height: 20px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	font-size: 12px;
+	line-height: 20px;
+	font-size: 12px;
+}
+/* アイテムセクションここから*/
+.c-section {
+	margin: 0 auto 60px auto;
+}
+
+.c-section-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.c-section-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.more-link {
+	position: relative;
+	color: #2996cc;
+	font-weight: bold;
+	font-size: 16px;
+	padding-right: 15px;
+}
+
+.more-link:after {
+	content: "";
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid #2996cc;
+	border-right: 2px solid #2996cc;
+	transform: rotate(45deg) translateY(-50%);
+}
+
+.item-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	position: relative;
+	width: calc(100%/ 5);
+	margin-bottom: 20px;
+}
+
+.item img {
+	width: 100%;
+	display: block;
+}
+
+.item-cap {
+	margin-bottom: 5px;
+}
+
+.item-info {
+	padding: 0 3px;
+}
+
+.item-name {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.item-text {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-size: 13px;
+}
+
+.item-price {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/*ピックアップ部分ここから*/
+.thumbnail-list{
+    justify-content: space-between;
+}
+.thumbnail-list .item{
+    width: calc(100% / 2 - 10px);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.thumbnail-list .item a{
+    display: flex;
+}
+.thumbnail-list .item-cap{
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.thumbnail-list .item-info{
+    width: calc(100% - 100px - 15px);
+}
