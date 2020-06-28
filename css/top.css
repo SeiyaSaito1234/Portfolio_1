@@ -1,7 +1,21 @@
 @charset "utf-8";
 
 /* TOPスライダー部分 */
-
-.top-slider-wrap{
+.top-slider-wrap {
 	margin-bottom: 60px;
+}
+.top-slider.inner{
+	width:auto;
+}
+.slick-slide img{
+	width:100%;
+}
+
+@media screen and (max-width: 768px) {
+	.top-slider img {
+		width: 100%;
+	}
+	.top-slider.inner{
+		margin:0 0;
+	}
 }

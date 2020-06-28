@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+.list-area{
+	margin:20px auto 60px auto;
+	overflow: hidden; /*float解除*/
+}
+.sidebar{
+	float: left;
+	width:200px;
+	background:#fafafa;
+	margin-right:40px;
+	padding:20px 0;
+	border: 1px solid #e8e8e8;
+}
+.sidebar-inner{
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+.sidebar-inner:last-child{
+	margin-bottom:0;
+}
+.sidebar-title{
+	font-weight: bold;
+	font-size:20px;
+}
+.sidebar-body{
+	margin-top:10px;
+}
+.sidebar-list li a{
+	border-bottom: 1px solid #e6e6e6;
+	display:block;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.price-select-wrap{
+	position:relative;
+	border:1px solid #bbb;
+	border-radius:2px;
+	padding:10px;
+	background:#fff;
+}
+.price-select-wrap:after{
+	position:absolute;
+	top:17px;
+	right:10px;
+	width:0;
+	height:0;
+	padding:0;
+	content:"";
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666;
+	pointer-events:none;
+}
+[data-more-btn]{
+	font-size:12px;
+	cursor:pointer;
+	background-color:#2996cc;
+	display:inline-block;
+	padding:5px 10px;
+	color:#fff;
+}
+.list-area .c-section{
+	float:left;
+	width: calc(100% - 200px - 40px);
+}
+.result-text{
+	display: inline-block;
+	font-size:26px;
+	font-weight:bold;
+	margin-bottom:30px;
+}
+.loader{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+	background: rgba(255,255,255,0.95);
+	z-index: 10;
+}
+.loader-inner{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:50px;
+	height:100px;
+}
+.line{
+	width:8px;
+	position:absolute;
+	border-radius:5px;
+	bottom:0;
+	left:50%;
+	background: linear-gradient(to top,#f599fa,#45f3d1);
+}
+.line1{
+	left:0;
+	animation: loader 0.3s ease alternate infinite;
+}
+.line2{
+	left:20px;
+	animation: loader 0.3s 0.2s ease alternate infinite;
+}
+.line3{
+	left:40px;
+	animation: loader 0.3s 0.4s ease alternate infinite;
+}
+@keyframes loader{
+	0% {
+		height:0;
+	}
+	100%{
+		height:75%;
+	}
+}
+
+
+/*レスポンシブはここから*/
+@media screen and (max-width: 768px){
+	.contents{
+		margin-top:20px;
+	}
+	.sidebar{
+		float:none;
+		margin-right: 0;
+		margin-bottom: 30px;
+		width: auto;
+	}
+	.list-area .c-section{
+		width:auto;
+		float: none;
+	}
+	.sidebar-inner{
+		margin-bottom:20px;
+	}
+	.sidebar-title{
+		font-size:16px;
+		position:relative;
+	}
+	.sidebar-title:after{
+		position:absolute;
+		top:50%;
+		right:10px;
+		transform:translateY(-50%);
+		content: "＋";
+		font-size:24%;
+	}
+	.sidebar-body{
+		display:none;
+	}
+	.inner.list-area{
+		margin:0 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*詳細部分全体*/
+.item-detail {
+	margin: 30px auto 80px;
+	display: flex; background : #f2f2f2;
+	padding: 30px;
+	background: #f2f2f2;
+}
+
+.item-detail img {
+	width: 100%;
+	display: block;
+}
+
+/*メイン部分*/
+.item-detail-main {
+	width: 50%;
+	margin-right: 3%;
+}
+
+.item-detail-main .mouse-note {
+	text-align: center;
+	margin-top: 5px;
+}
+
+/*情報部分*/
+.item-detail-info{
+	width:47%;
+}
+.item-detail-name{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.item-detail-brand{
+	margin-bottom:20px;
+	font-size:18px;
+	font-weight:bold;
+}
+.item-size{
+	margin-bottom:20px;
+	font-size:18px;
+}
+.item-size li{
+	border-radius:5px;
+	background:#fff;
+	display:inline-block;
+	padding: 5px 20px;
+	font-size:16px;
+	border:1px solid #e5e5e5;
+	cursor:pointer;
+	margin-bottom:3px;
+}
+.item-size li.is-active{
+	background:#333;
+	color:#fff;
+}
+.item-size-select{
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.item-detail-price{
+	font-size:30px;
+	margin-bottom:20px;
+	font-weight:bold;
+}
+[data-accordion="trigger"]{
+	margin-top:18px;
+	font-weight:bold;
+	cursor:pointer;
+	font-size:18px;
+}
+[data-accordion="trigger"]:before{
+	content:"▼";
+	display:inline-block;
+	margin-right:6px;
+}
+[data-accordion="trigger"].is-active:before{
+	content:"―";
+}
+[data-accordion="target"]{
+	margin-top:18px;
+	display:none;
+}
+
+/*レビューをする*/
+
+.review{
+	display:flex;
+	font-size:30px;
+}
+.review li{
+	margin-right: 20px;
+	color: #ccc;
+	cursor:pointer;
+}
+.review li.is-active{
+	color: #FFC107;
+}
+
+/*レスポンシブここから*/
+@media screen and (max-width: 768px){
+	.item-detail{
+		display: block;
+		padding: 20px;
+		margin:0 auto 80px;
+	}
+	.item-detail-main{
+		width:auto;
+		margin-right:0;
+		margin-bottom:20px;
+	}
+	.item-detail-info{
+		width:auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
