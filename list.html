@@ -4,10 +4,8 @@
 <meta charset="UTF-8">
 <title>My Portfolio</title>
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 <link rel="stylesheet" href="./css/common.css">
-<link rel="stylesheet" href="./css/top.css">
+<link rel="stylesheet" href="./css/list.css">
 </head>
 <body>
 
@@ -34,346 +32,157 @@
 	</header>
 
 	<div class="contents">
-		<div class="top-slider-wrap">
-			<ul class="top-slider inner">
-				<li><img src="img/banner1.png" alt=""></li>
-				<li><img src="img/banner2.png" alt=""></li>
-				<li><img src="img/banner3.png" alt=""></li>
-			</ul>
+		<div class="inner list-area">
+			<aside class="sidebar">
+				<section class="sidebar-inner">
+					<h3 class="sidebar-title">カテゴリー</h3>
+					<div class="sidebar-body">
+						<ul class="sidebar-list">
+							<li><a href="">MEN</a></li>
+							<li><a href="">WOMAN</a></li>
+							<li><a href="">KIDS</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="sidebar-inner">
+					<h3 class="sidebar-title">価格</h3>
+					<div class="sidebar-body">
+						<form action="" method="GET">
+							<div class="price-select-wrap">
+								<select name="price" class="price-select">
+									<option hidden="">価格を選択する。</option>
+									<option value="1000">～1000\</option>
+									<option value="2000">～2000\</option>
+									<option value="3000">～3000\</option>
+									<option value="4000">～4000\</option>
+									<option value="5000">～5000\</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="sidebar-inner">
+					<h3 class="sidebar-title">ブランド</h3>
+					<div class="sidebar-body">
+						<ul class="sidebar-list">
+							<li><a href="">AAA</a></li>
+							<li><a href="">BBB</a></li>
+							<li><a href="">CCC</a></li>
+						</ul>
+						<div data-more-btn="brand">もっと見る＋</div>
+					</div>
+				</section>
+			</aside>
+			<section class="c-section">
+				<h2 class="result-text">テキストテキスト</h2>
+				<ul class="item-list">
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/34.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">ワンピース</h3>
+								<h3 class="item-text">可愛い花柄の赤いワンピース！胸元もひらいていて、夏季などでも爽快感のあるアイテムです</h3>
+								<div class="item-price">¥1000</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/39.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">タイトスカート</h3>
+								<h3 class="item-text">清楚なタイトスカート。カラーは赤、青、白、黒の4種類あります</h3>
+								<div class="item-price">¥7600</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/45.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">伸縮性のあるウール素材のシャツ。24種のカラーから選べます</h3>
+								<div class="item-price">¥3400</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/48.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">清楚感のあるホワイトをベースにお洒落なコモン柄のゆったりしたシャツ</h3>
+								<div class="item-price">¥5600</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/58.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/22.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/12.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/11.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/25.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+					<li class="item"><a href="#">
+							<div class="item-cap">
+								<img src="./img/item/32.png" loading="lazy">
+							</div>
+							<div class="item-info">
+								<h3 class="item-name">シャツ</h3>
+								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
+								<div class="item-price">¥2200</div>
+							</div>
+					</a></li>
+				</ul>
+				<div data-more-btn="items">もっと見る+</div>
+			</section>
 		</div>
+		<!-- inner -->
 		<div class="inner">
 			<section class="c-section">
-				<div class="c-section-head">
-					<h2 class="c-section-title">NEW</h2>
-				</div>
-				<ul class="item-list" data-item-list="new">
-				</ul>
-			</section>
-			<section class="c-section" data-fadeIn>
-				<div class="c-section-head">
-					<h2 class="c-section-title">MEN</h2>
-					<a href="" class="more-link">もっと見る</a>
-				</div>
-				<ul class="item-list">
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/34.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">ワンピース</h3>
-								<h3 class="item-text">可愛い花柄の赤いワンピース！胸元もひらいていて、夏季などでも爽快感のあるアイテムです</h3>
-								<div class="item-price">¥1000</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/39.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">タイトスカート</h3>
-								<h3 class="item-text">清楚なタイトスカート。カラーは赤、青、白、黒の4種類あります</h3>
-								<div class="item-price">¥7600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/45.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">伸縮性のあるウール素材のシャツ。24種のカラーから選べます</h3>
-								<div class="item-price">¥3400</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/48.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">清楚感のあるホワイトをベースにお洒落なコモン柄のゆったりしたシャツ</h3>
-								<div class="item-price">¥5600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/58.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/22.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/12.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/11.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/25.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/32.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-				</ul>
-			</section>
-			<section class="c-section" data-fadeIn>
-				<div class="c-section-head">
-					<h2 class="c-section-title">WOMAN</h2>
-					<a href="" class="more-link">もっと見る</a>
-				</div>
-				<ul class="item-list">
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/34.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">ワンピース</h3>
-								<h3 class="item-text">可愛い花柄の赤いワンピース！胸元もひらいていて、夏季などでも爽快感のあるアイテムです</h3>
-								<div class="item-price">¥1000</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/39.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">タイトスカート</h3>
-								<h3 class="item-text">清楚なタイトスカート。カラーは赤、青、白、黒の4種類あります</h3>
-								<div class="item-price">¥7600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/45.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">伸縮性のあるウール素材のシャツ。24種のカラーから選べます</h3>
-								<div class="item-price">¥3400</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/48.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">清楚感のあるホワイトをベースにお洒落なコモン柄のゆったりしたシャツ</h3>
-								<div class="item-price">¥5600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/58.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/22.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/12.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/11.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/25.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/32.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-				</ul>
-			</section>
-			<section class="c-section" data-fadeIn>
-				<div class="c-section-head">
-					<h2 class="c-section-title">KIDS</h2>
-					<a href="" class="more-link">もっと見る</a>
-				</div>
-				<ul class="item-list">
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/34.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">ワンピース</h3>
-								<h3 class="item-text">可愛い花柄の赤いワンピース！胸元もひらいていて、夏季などでも爽快感のあるアイテムです</h3>
-								<div class="item-price">¥1000</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/39.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">タイトスカート</h3>
-								<h3 class="item-text">清楚なタイトスカート。カラーは赤、青、白、黒の4種類あります</h3>
-								<div class="item-price">¥7600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/45.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">伸縮性のあるウール素材のシャツ。24種のカラーから選べます</h3>
-								<div class="item-price">¥3400</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/48.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">清楚感のあるホワイトをベースにお洒落なコモン柄のゆったりしたシャツ</h3>
-								<div class="item-price">¥5600</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/58.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/22.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/12.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/11.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/25.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-					<li class="item"><a href="#">
-							<div class="item-cap">
-								<img src="./img/item/32.png" loading="lazy">
-							</div>
-							<div class="item-info">
-								<h3 class="item-name">シャツ</h3>
-								<h3 class="item-text">タイトで可愛いブラックシャツ。ジャケットあわせて着こなしましょう</h3>
-								<div class="item-price">¥2200</div>
-							</div>
-					</a></li>
-				</ul>
-			</section>
-			<section class="c-section" data-fadeIn>
 				<div class="c-section-head">
 					<h2 class="c-section-title">PICK UP</h2>
 				</div>
@@ -480,31 +289,6 @@
 					</a></li>
 				</ul>
 			</section>
-		</div>
-		<!-- inner -->
-		<section class="c-brand">
-			<div class="inner" data-fadeIn>
-				<div class="c-section-head">
-					<h2 class="c-section-title">BRAND</h2>
-				</div>
-				<ul class="brand-list">
-					<li><a href="">AAA</a></li>
-					<li><a href="">BBB</a></li>
-					<li><a href="">CCC</a></li>
-					<li><a href="">DDD</a></li>
-					<li><a href="">EEE</a></li>
-					<li><a href="">FFF</a></li>
-					<li><a href="">GGG</a></li>
-					<li><a href="">HHH</a></li>
-					<li><a href="">III</a></li>
-					<li><a href="">JJJ</a></li>
-					<li><a href="">KKK</a></li>
-					<li><a href="">LLL</a></li>
-				</ul>
-			</div>
-		</section>
-
-		<div class="inner">
 			<section class="c-section">
 				<div class="c-section-head">
 					<h2 class="c-section-title">お気に入りアイテム♡</h2>
@@ -522,6 +306,7 @@
 				</ul>
 			</section>
 		</div>
+
 	</div>
 	<!-- contents -->
 	<footer class="footer">
@@ -542,30 +327,17 @@
 		</ul>
 	</footer>
 
-	<script src="js/item_data.js"></script>
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+	</div>
+
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="js/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
